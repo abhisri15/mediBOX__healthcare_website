@@ -1,0 +1,341 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            background: linear-gradient(to left, #000000, #434343);
+            color: white;
+
+        }
+        .float-container {
+    /* border: 3px solid #fff; */
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    color: white;
+    /* border: 2px solid red; */
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container my-3 "></div>
+  <h1 class="text-center text-white">Disease Prognosis Prediction</h1>
+    <form method="post" action="/diseasePredictor" class="mx-5">
+        <div class="float-container">
+            <div class="float-child">
+        <label for="itching">Itching:</label>
+        <input type="input" id="itching" name="itching" value="0"><br>
+        <label for="skin_rash">Skin rash:</label>
+        <input type="input" id="skin_rash" name="skin_rash" value="0"><br>
+        <label for="nodal_skin_eruptions">Nodal skin eruptions:</label>
+        <input type="input" id="nodal_skin_eruptions" name="nodal_skin_eruptions" value="0"><br>
+        <label for="continuous_sneezing">Continuous sneezing:</label>
+        <input type="input" id="continuous_sneezing" name="continuous_sneezing" value="0"><br>
+        <label for="shivering">Shivering:</label>
+        <input type="input" id="shivering" name="shivering" value="0"><br>
+        <label for="chills">Chills:</label>
+        <input type="input" id="chills" name="chills" value="0"><br>
+        <label for="joint_pain">Joint pain:</label>
+        <input type="input" id="joint_pain" name="joint_pain" value="0"><br>
+        <label for="stomach_pain">Stomach pain:</label>
+        <input type="input" id="stomach_pain" name="stomach_pain" value="0"><br>
+        <label for="acidity">Acidity:</label>
+        <input type="input" id="acidity" name="acidity" value="0"><br>
+        <label for="ulcers_on_tongue">Ulcers on tongue:</label>
+        <input type="input" id="ulcers_on_tongue" name="ulcers_on_tongue" value="0"><br>
+        <label for="muscle_wasting">Muscle wasting:</label>
+        <input type="input" id="muscle_wasting" name="muscle_wasting" value="0"><br>
+        <label for="vomiting">Vomiting:</label>
+        <input type="input" id="vomiting" name="vomiting" value="0"><br>
+        <label for="burning_micturition">Burning micturition:</label>
+        <input type="input" id="burning_micturition" name="burning_micturition" value="0"><br>
+        <label for="spotting_ urination">Spotting urination:</label>
+        <input type="input" id="spotting_ urination" name="spotting_ urination" value="0"><br>
+        <label for="fatigue">Fatigue:</label>
+        <input type="input" id="fatigue" name="fatigue" value="0"><br>
+        <label for="weight_gain">Weight gain:</label>
+        <input type="input" id="weight_gain" name="weight_gain" value="0"><br>
+        <label for="anxiety">Anxiety:</label>
+        <input type="input" id="anxiety" name="anxiety" value="0"><br>
+        <label for="cold_hands_and_feets">Cold hands and feets:</label>
+        <input type="input" id="cold_hands_and_feets" name="cold_hands_and_feets" value="0"><br>
+        <label for="mood_swings">Mood swings:</label>
+        <input type="input" id="mood_swings" name="mood_swings" value="0"><br>
+        <label for="weight_loss">Weight_loss:</label>
+        <input type="input" id="weight_loss" name="weight_loss" value="0"><br>
+        <label for="restlessness">Restlessness:</label>
+        <input type="input" id="restlessness" name="restlessness" value="0"><br>
+        <label for="lethargy">Lethargy:</label>
+        <input type="input" id="lethargy" name="lethargy" value="0"><br>
+        <label for="patches_in_throat">Patches_in_throat:</label>
+        <input type="input" id="patches_in_throat" name="patches_in_throat" value="0"><br>
+        <label for="irregular_sugar_level">Irregular_sugar_level:</label>
+        <input type="input" id="irregular_sugar_level" name="irregular_sugar_level" value="0"><br>
+        <label for="cough">Cough:</label>
+        <input type="input" id="cough" name="cough" value="0"><br>
+        <label for="high_fever">High_fever:</label>
+        <input type="input" id="high_fever" name="high_fever" value="0"><br>
+        <label for="sunken_eyes">Sunken_eyes:</label>
+        <input type="input" id="sunken_eyes" name="sunken_eyes" value="0"><br>
+        <label for="breathlessness">Breathlessness:</label>
+        <input type="input" id="breathlessness" name="breathlessness" value="0"><br>
+        <label for="sweating">Sweating:</label>
+        <input type="input" id="sweating" name="sweating" value="0"><br>
+        <label for="dehydration">Dehydration:</label>
+        <input type="input" id="dehydration" name="dehydration" value="0"><br>
+        <label for="indigestion">Indigestion:</label>
+        <input type="input" id="indigestion" name="indigestion" value="0"><br>
+        <label for="headache">Headache:</label>
+        <input type="input" id="headache" name="headache" value="0"><br>
+
+        <label for="yellowish_skin">Yellowish_skin:</label>
+        <input type="input" id="yellowish_skin" name="yellowish_skin" value="0"><br>
+        <label for="dark_urine">Dark_urine:</label>
+        <input type="input" id="dark_urine" name="dark_urine" value="0"><br>
+        <label for="nausea">Nausea:</label>
+        <input type="input" id="nausea" name="nausea" value="0"><br>
+        <label for="loss_of_appetite">Loss_of_appetite:</label>
+        <input type="input" id="loss_of_appetite" name="loss_of_appetite" value="0"><br>
+        <label for="pain_behind_the_eyes">Pain_behind_the_eyes:</label>
+        <input type="input" id="pain_behind_the_eyes" name="pain_behind_the_eyes" value="0"><br>
+        <label for="back_pain">Back_pain:</label>
+        <input type="input" id="back_pain" name="back_pain" value="0"><br>
+        <label for="constipation">Constipation:</label>
+        <input type="input" id="constipation" name="constipation" value="0"><br>
+        <label for="abdominal_pain">Abdominal_pain:</label>
+        <input type="input" id="abdominal_pain" name="abdominal_pain" value="0"><br>
+        <label for="diarrhoea">Diarrhoea:</label>
+        <input type="input" id="diarrhoea" name="diarrhoea" value="0"><br>
+        <label for="mild_fever">Mild_fever:</label>
+        <input type="input" id="mild_fever" name="mild_fever" value="0"><br>
+        <label for="yellow_urine">yellow_urine:</label>
+        <input type="input" id="yellow_urine" name="yellow_urine" value="0"><br>
+        <label for="yellowing_of_eyes">yellowing_of_eyes:</label>
+        <input type="input" id="yellowing_of_eyes" name="yellowing_of_eyes" value="0"><br>
+
+        <label for="acute_liver_failure">acute_liver_failure:</label>
+        <input type="input" id="acute_liver_failure" name="acute_liver_failure" value="0"><br>
+
+        <label for="fluid_overload">fluid_overload:</label>
+        <input type="input" id="fluid_overload" name="fluid_overload" value="0"><br>
+        <label for="swelling_of_stomach">swelling_of_stomach:</label>
+        <input type="input" id="swelling_of_stomach" name="swelling_of_stomach" value="0"><br>
+        <label for="swelled_lymph_nodes">swelled_lymph_nodes:</label>
+        <input type="input" id="swelled_lymph_nodes" name="swelled_lymph_nodes" value="0"><br>
+
+        <label for="malaise">malaise:</label>
+        <input type="input" id="malaise" name="malaise" value="0"><br>
+        <label for="blurred_and_distorted_vision">blurred_and_distorted_vision:</label>
+        <input type="input" id="blurred_and_distorted_vision" name="blurred_and_distorted_vision" value="0"><br>
+        <label for="phlegm">phlegm:</label>
+        <input type="input" id="phlegm" name="phlegm" value="0"><br>
+        <label for="throat_irritation">throat_irritation:</label>
+        <input type="input" id="throat_irritation" name="throat_irritation" value="0"><br>
+        <label for="redness_of_eyes">redness_of_eyes:</label>
+        <input type="input" id="redness_of_eyes" name="redness_of_eyes" value="0"><br>
+
+        <label for="sinus_pressure">sinus_pressure:</label>
+        <input type="input" id="sinus_pressure" name="sinus_pressure" value="0"><br>
+        <label for="runny_nose">runny_nose:</label>
+        <input type="input" id="runny_nose" name="runny_nose" value="0"><br>
+        <label for="congestion">congestion:</label>
+        <input type="input" id="congestion" name="congestion" value="0"><br>
+        <label for="chest_pain">chest_pain:</label>
+        <input type="input" id="chest_pain" name="chest_pain" value="0"><br>
+        <label for="weakness_in_limbs">weakness_in_limbs:</label>
+        <input type="input" id="weakness_in_limbs" name="weakness_in_limbs" value="0"><br>
+        <label for="fast_heart_rate">fast_heart_rate:</label>
+        <input type="input" id="fast_heart_rate" name="fast_heart_rate" value="0"><br>
+
+        <label for="pain_during_bowel_movements">pain_during_bowel_movements:</label>
+        <input type="input" id="pain_during_bowel_movements" name="pain_during_bowel_movements" value="0"><br>
+        <label for="pain_in_anal_region">pain_in_anal_region:</label>
+        <input type="input" id="pain_in_anal_region" name="pain_in_anal_region" value="0"><br>
+        <label for="bloody_stool">bloody_stool:</label>
+        <input type="input" id="bloody_stool" name="bloody_stool" value="0"><br>
+        <label for="irritation_in_anus">irritation_in_anus:</label>
+        <input type="input" id="irritation_in_anus" name="irritation_in_anus" value="0"><br>
+        <label for="neck_pain">neck_pain:</label>
+        <input type="input" id="neck_pain" name="neck_pain" value="0"><br>
+
+        <label for="dizziness">dizziness:</label>
+        <input type="input" id="dizziness" name="dizziness" value="0"><br>
+
+        <label for="cramps">cramps:</label>
+        <input type="input" id="cramps" name="cramps" value="0"><br>
+        </div>
+        
+        
+            <div class="float-child">
+        <label for="bruising">bruising:</label>
+        <input type="input" id="bruising" name="bruising" value="0"><br>
+        <label for="obesity">obesity:</label>
+        <input type="input" id="obesity" name="obesity" value="0"><br>
+        <label for="swollen_legs">swollen_legs:</label>
+        <input type="input" id="swollen_legs" name="swollen_legs" value="0"><br>
+        <label for="swollen_blood_vessels">swollen_blood_vessels:</label>
+        <input type="input" id="swollen_blood_vessels" name="swollen_blood_vessels" value="0"><br>
+        <label for="puffy_face_and_eyes">puffy_face_and_eyes:</label>
+        <input type="input" id="puffy_face_and_eyes" name="puffy_face_and_eyes" value="0"><br>
+        <label for="enlarged_thyroid">enlarged_thyroid:</label>
+        <input type="input" id="enlarged_thyroid" name="enlarged_thyroid" value="0"><br>
+        <label for="brittle_nails">brittle_nails:</label>
+        <input type="input" id="brittle_nails" name="brittle_nails" value="0"><br>
+
+        <label for="swollen_extremeties">swollen_extremeties:</label>
+        <input type="input" id="swollen_extremeties" name="swollen_extremeties" value="0"><br>
+        <label for="excessive_hunger">excessive_hunger:</label>
+        <input type="input" id="excessive_hunger" name="excessive_hunger" value="0"><br>
+        <label for="extra_marital_contacts">extra_marital_contacts:</label>
+        <input type="input" id="extra_marital_contacts" name="extra_marital_contacts" value="0"><br>
+        <label for="drying_and_tingling_lips">drying_and_tingling_lips:</label>
+        <input type="input" id="drying_and_tingling_lips" name="drying_and_tingling_lips" value="0"><br>
+
+        <label for="slurred_speech">slurred_speech:</label>
+        <input type="input" id="slurred_speech" name="slurred_speech" value="0"><br>
+        <label for="knee_pain">knee_pain:</label>
+        <input type="input" id="knee_pain" name="knee_pain" value="0"><br>
+        <label for="hip_joint_pain">hip_joint_pain:</label>
+        <input type="input" id="hip_joint_pain" name="hip_joint_pain" value="0"><br>
+
+        <label for="muscle_weakness">muscle_weakness:</label>
+        <input type="input" id="muscle_weakness" name="muscle_weakness" value="0"><br>
+        <label for="stiff_neck">stiff_neck:</label>
+        <input type="input" id="stiff_neck" name="stiff_neck" value="0"><br>
+
+        <label for="swelling_joints">swelling_joints:</label>
+        <input type="input" id="swelling_joints" name="swelling_joints" value="0"><br>
+        <label for="movement_stiffness">movement_stiffness:</label>
+        <input type="input" id="movement_stiffness" name="movement_stiffness" value="0"><br>
+        <label for="spinning_movements">spinning_movements:</label>
+        <input type="input" id="spinning_movements" name="spinning_movements" value="0"><br>
+
+        <label for="loss_of_balance">loss_of_balance:</label>
+        <input type="input" id="loss_of_balance" name="loss_of_balance" value="0"><br>
+        <label for="unsteadiness">unsteadiness:</label>
+        <input type="input" id="unsteadiness" name="unsteadiness" value="0"><br>
+        <label for="weakness_of_one_body_side">weakness_of_one_body_side:</label>
+        <input type="input" id="weakness_of_one_body_side" name="weakness_of_one_body_side" value="0"><br>
+
+        <label for="loss_of_smell">loss_of_smell:</label>
+        <input type="input" id="loss_of_smell" name="loss_of_smell" value="0"><br>
+        <label for="bladder_discomfort">bladder_discomfort:</label>
+        <input type="input" id="bladder_discomfort" name="bladder_discomfort" value="0"><br>
+
+        <label for="foul_smell_of urine">foul_smell_of urine:</label>
+        <input type="input" id="foul_smell_of urine" name="foul_smell_of urine" value="0"><br>
+
+        <label for="continuous_feel_of_urine">continuous_feel_of_urine:</label>
+        <input type="input" id="continuous_feel_of_urine" name="continuous_feel_of_urine" value="0"><br>
+
+        <label for="passage_of_gases">passage_of_gases:</label>
+        <input type="input" id="passage_of_gases" name="passage_of_gases" value="0"><br>
+
+        <label for="internal_itching">internal_itching:</label>
+        <input type="input" id="internal_itching" name="internal_itching" value="0"><br>
+
+        <label for="toxic_look_(typhos)">toxic_look_(typhos):</label>
+        <input type="input" id="toxic_look_(typhos)" name="toxic_look_(typhos)" value="0"><br>
+        <label for="depression">depression:</label>
+        <input type="input" id="depression" name="depression" value="0"><br>
+        <label for="irritability">irritability:</label>
+        <input type="input" id="irritability" name="irritability" value="0"><br>
+
+        <label for="muscle_pain">muscle_pain:</label>
+        <input type="input" id="muscle_pain" name="muscle_pain" value="0"><br>
+        <label for="altered_sensorium">altered_sensorium:</label>
+        <input type="input" id="altered_sensorium" name="altered_sensorium" value="0"><br>
+        <label for="red_spots_over_body">red_spots_over_body:</label>
+        <input type="input" id="red_spots_over_body" name="red_spots_over_body" value="0"><br>
+        <label for="belly_pain">belly_pain:</label>
+        <input type="input" id="belly_pain" name="belly_pain" value="0"><br>
+
+        <label for="abnormal_menstruation">abnormal_menstruation:</label>
+        <input type="input" id="abnormal_menstruation" name="abnormal_menstruation" value="0"><br>
+        <label for="dischromic _patches">dischromic _patches:</label>
+        <input type="input" id="dischromic _patches" name="dischromic _patches" value="0"><br>
+
+        <label for="watering_from_eyes">watering_from_eyes:</label>
+        <input type="input" id="watering_from_eyes" name="watering_from_eyes" value="0"><br>
+        <label for="increased_appetite">increased_appetite:</label>
+        <input type="input" id="increased_appetite" name="increased_appetite" value="0"><br>
+        <label for="polyuria">polyuria:</label>
+        <input type="input" id="polyuria" name="polyuria" value="0"><br>
+
+        <label for="family_history">family_history:</label>
+        <input type="input" id="family_history" name="family_history" value="0"><br>
+        <label for="mucoid_sputum">mucoid_sputum:</label>
+        <input type="input" id="mucoid_sputum" name="mucoid_sputum" value="0"><br>
+        <label for="rusty_sputum">rusty_sputum:</label>
+        <input type="input" id="rusty_sputum" name="rusty_sputum" value="0"><br>
+
+        <label for="lack_of_concentration">lack_of_concentration:</label>
+        <input type="input" id="lack_of_concentration" name="lack_of_concentration" value="0"><br>
+        <label for="visual_disturbances">visual_disturbances:</label>
+        <input type="input" id="visual_disturbances" name="visual_disturbances" value="0"><br>
+
+        <label for="receiving_blood_transfusion">receiving_blood_transfusion:</label>
+        <input type="input" id="receiving_blood_transfusion" name="receiving_blood_transfusion" value="0"><br>
+        <label for="coma">coma:</label>
+        <input type="input" id="coma" name="coma" value="0"><br>
+
+        <label for="stomach_bleeding">stomach_bleeding:</label>
+        <input type="input" id="stomach_bleeding" name="stomach_bleeding" value="0"><br>
+        <label for="distention_of_abdomen">distention_of_abdomen:</label>
+        <input type="input" id="distention_of_abdomen" name="distention_of_abdomen" value="0"><br>
+
+        <label for="history_of_alcohol_consumption">history_of_alcohol_consumption:</label>
+        <input type="input" id="history_of_alcohol_consumption" name="history_of_alcohol_consumption" value="0"><br>
+        <label for="fluid_overload">fluid_overload:</label>
+        <input type="input" id="fluid_overload" name="fluid_overload" value="0"><br>
+
+        <label for="blood_in_sputum">blood_in_sputum:</label>
+        <input type="input" id="blood_in_sputum" name="blood_in_sputum" value="0"><br>
+        <label for="prominent_veins_on_calf">prominent_veins_on_calf:</label>
+        <input type="input" id="prominent_veins_on_calf" name="prominent_veins_on_calf" value="0"><br>
+
+        <label for="palpitations">palpitations:</label>
+        <input type="input" id="palpitations" name="palpitations" value="0"><br>
+        <label for="painful_walking">painful_walking:</label>
+        <input type="input" id="painful_walking" name="painful_walking" value="0"><br>
+
+        <label for="pus_filled_pimples">pus_filled_pimples:</label>
+        <input type="input" id="pus_filled_pimples" name="pus_filled_pimples" value="0"><br>
+        <label for="blackheads">blackheads:</label>
+        <input type="input" id="blackheads" name="blackheads" value="0"><br>
+        <label for="scurring">scurring:</label>
+        <input type="input" id="scurring" name="scurring" value="0"><br>
+
+        <label for="skin_peeling">skin_peeling:</label>
+        <input type="input" id="skin_peeling" name="skin_peeling" value="0"><br>
+        <label for="silver_like_dusting">silver_like_dusting:</label>
+        <input type="input" id="silver_like_dusting" name="silver_like_dusting" value="0"><br>
+        <label for="small_dents_in_nails">small_dents_in_nails:</label>
+        <input type="input" id="small_dents_in_nails" name="small_dents_in_nails" value="0"><br>
+        <label for="inflammatory_nails">inflammatory_nails:</label>
+        <input type="input" id="inflammatory_nails" name="inflammatory_nails" value="0"><br>
+
+        <label for="blister">blister:</label>
+        <input type="input" id="blister" name="blister" value="0"><br>
+        <label for="red_sore_around_nose">red_sore_around_nose:</label>
+        <input type="input" id="red_sore_around_nose" name="red_sore_around_nose" value="0"><br>
+
+        <label for="yellow_crust_ooze">yellow_crust_ooze:</label>
+        <input type="input" id="yellow_crust_ooze" name="yellow_crust_ooze" value="0"><br>
+
+            </div>
+        </div>
+        
+        <div class="mx-auto"><button type="submit" class=" mt-5" > Submit </button></div>
+    </form>
+</body>
+</html>
