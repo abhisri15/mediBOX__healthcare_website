@@ -1,1 +1,1 @@
-# mediBOX.github.io
+# mediBOX
