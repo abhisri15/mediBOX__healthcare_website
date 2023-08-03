@@ -6,7 +6,7 @@ from sklearn import ensemble
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
-def prediction(concave points_mean, area_mean, radius_mean, perimeter_mean, concavity_mean):
+def prediction(concave_points_mean, area_mean, radius_mean, perimeter_mean, concavity_mean):
     df = pd.read_csv('cancer.csv')
     df.drop(df.columns[[0,-1]], axis=1, inplace=True)
 
@@ -37,6 +37,6 @@ def prediction(concave points_mean, area_mean, radius_mean, perimeter_mean, conc
     print("---------------------")
     print(clf_report)
     print("_____________________")
-    X1_test=np.array([concave points_mean, area_mean, radius_mean, perimeter_mean, concavity_mean])
+    X1_test=np.array([concave_points_mean, area_mean, radius_mean, perimeter_mean, concavity_mean])
     X1_test=X1_test.reshape((1,-1))
     return model.predict(X1_test)[0]
